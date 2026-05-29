@@ -7,7 +7,7 @@ interface IImageSelectorProps {
 export default function ImageSelector(props: IImageSelectorProps) {
   return (
     <div className="image-picker">
-      <h3>Välj en meme!</h3>
+      <h3 className="pick-a-meme">Välj en meme!</h3>
       <div>
         {props.images.map((img) => (
           <img

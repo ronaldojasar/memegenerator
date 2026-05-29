@@ -51,8 +51,10 @@ export default function App() {
 
   return (
     <div className="app">
-      <h2>😂⚡😎😂⚡😎</h2>
-      <h1>Meme Generator</h1>
+      <h2 className="emoji-row" onClick={() => setIsSelectorOpen(false)}>
+        😂⚡😎😂⚡😎
+      </h2>
+      <h1 className="title-text">Meme Generator</h1>
 
       {!isSelectorOpen && (
         <button onClick={() => setIsSelectorOpen(true)}>

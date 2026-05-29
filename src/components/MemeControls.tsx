@@ -58,17 +58,17 @@ export default function MemeControls(props: IMemeControlsProps) {
       </div>
       <div>
         <button // knapp för att matcha storleken på över och bottentext
-          className="matchTextSizeBtn"
+          className="match-text-size"
           onClick={() => props.onBottomTextSizeChange(props.topTextSize)}
         >
-          Matcha storleken på text (följer toppraden)
+          Matcha storleken på text (följer toppslidern)
         </button>
       </div>
       <button
         onClick={props.onSave}
         style={{
           fontWeight: "900",
-          border: "4px solid #694363",
+          border: "4px solid #94d2bd",
         }}
       >
         Ladda ner bilden

@@ -3,7 +3,8 @@
   max-width: 800px;
   margin: 20px auto;
   padding: 20px;
-  border: 1px solid #ccc;
+  border: 2px solid #0a9396;
+  border-radius: 8px;
   background-color: #3c686b5b;
 }
 
@@ -11,7 +12,8 @@ button {
   padding: 8px 16px;
   margin: 5px 0;
   cursor: pointer;
-  border: 1px solid #999;
+  border: 2px solid #0a9396;
+  border-radius: 6px;
   color: black;
 }
 
@@ -25,10 +27,11 @@ input[type="text"] {
 }
 
 .image-picker {
-  border: 1px solid #000;
+  border: 2px solid #0a9396;
+  border-radius: 8px;
   padding: 15px;
   margin-bottom: 20px;
-  background-color: #fff;
+  background-color: #00607300;
 }
 
 .image-picker img {
@@ -41,7 +44,7 @@ input[type="text"] {
 }
 
 .image-picker img:hover {
-  border: 2px solid #3c686b;
+  border: 2px solid #9bffde;
 }
 
 .edit-area {
@@ -67,7 +70,7 @@ input[type="text"] {
   color: white;
   text-transform: uppercase;
   font-weight: bold;
-  font-family: Impact, sans-serif;
+  font-family: monospace, arial, helvetica;
   text-shadow:
     2px 2px 0 #000,
     -2px -2px 0 #000,
@@ -90,7 +93,7 @@ input[type="text"] {
   margin-top: 20px;
   border: 1px solid #ccc;
   padding: 15px;
-  background: #eaeaea;
+  background: #679596;
 }
 
 .input-box {
@@ -98,8 +101,8 @@ input[type="text"] {
   padding-bottom: 10px;
 }
 
-.matchTextSizeBtn {
-  background-color: #a28aad;
+.match-text-size {
+  background-color: #01a7aa;
   border: 1px solid #524343;
   padding: 6px 12px;
   margin: 8px 0;
@@ -108,7 +111,39 @@ input[type="text"] {
   border-radius: 3px;
 }
 
-.matchTextSizeBtn:hover {
-  background-color: #876f929d;
+.match-text-size:hover {
+  background-color: #0a9396;
   cursor: pointer;
+}
+
+.title-text {
+  color: #ee9b00;
+}
+
+.emoji-row {
+  border: 2px solid #0a9396;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 5px;
+  max-width: 200px;
+}
+
+.emoji-row:hover {
+  cursor: pointer;
+
+  animation: subtleWobble 0.5s ease-in-out infinite;
+}
+
+@keyframes subtleWobble {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.pick-a-meme {
+  color: white;
 }
